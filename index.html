@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bricka på Bricka UF</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Import fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome (for icons) -->
+		<script
+			src="https://kit.fontawesome.com/ac7c823845.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- jQuery import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="navigation-bar mobile">
+			<button class="hamburger" id="open-nav-btn">
+				<span class="top"></span>
+				<span class="mid"></span>
+				<span class="bot"></span>
+			</button>
+			<a href="#home">Bricka på Bricka UF</a>
+		</div>
+		<div class="navigation-page mobile" id="mobile-nav-page">
+			<h3 class="nav-subheading">Avsnitt</h3>
+			<ul class="nav-list segments">
+				<li><a href="#home">Start</a></li>
+				<li><a href="#about">Vem är vi?</a></li>
+				<li><a href="#bussiness-idea">Affärsidé</a></li>
+				<li><a href="#background">Bakgrund - Vision</a></li>
+				<li><a href="#sustainability">Hållbarhet</a></li>
+			</ul>
+			<h3 class="nav-subheading">Länkar</h3>
+			<ul class="nav-list links">
+				<li>
+					<a href="https://www.instagram.com/brickapabricka_uf/">Instagram</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/profile.php?id=100086192835796"
+						>Facebook</a
+					>
+				</li>
+				<li>
+					<a href="https://ungforetagsamhet.se/company/bricka-pa-bricka-uf"
+						>Ungföretagsamhet</a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<div class="segment" id="home">
+			<img src="images/Logo.png" alt="träd på en bricka" />
+			<h1>Bricka på Bricka UF</h1>
+			<h2>Våra Brickor</h2>
+			<div class="slideshow pruducts"></div>
+		</div>
+		<div class="segment" id="about">
+			<h2>Vem är vi?</h2>
+			<div class="persons-list">
+				<div class="person-container">
+					<img src="images/persons/Emma.jpg" alt="Emma Bernhede" />
+					<div class="person-info">
+						<h3>Emma Bernhede, VD</h3>
+						<p>
+							Engagerad, strukturerad och ansvarstagande. En stark egenskap hos
+							Emma är att hon är hjälpsam, mycket noggrann och alltid försöker
+							se en lösning med hjälp av positiv inställning, vilket kommer att
+							gynna företaget. Hon är bra på att vara organiserad och få
+							verksamheten framåt genom positivitet och sin förmåga att hitta en
+							lösning på allting.
+						</p>
+					</div>
+				</div>
+				<div class="person-container">
+					<img src="images/persons/Minna.jpg" alt="Minna Horrocks" />
+					<div class="person-info">
+						<h3>Minna Horrocks, Produktansvarig</h3>
+						<p>
+							En enormt kreativ och lösningsorienterad person med ett stort
+							intresse och passion för konst och design. Med en kombination av
+							egenskaper som viljestark, öppensinnad, logisk, processinriktad
+							likväl som resultatinriktad, noggrann med ett öga för detaljer
+							passar denna roll henne som handen i handsken.
+						</p>
+					</div>
+				</div>
+				<div class="person-container">
+					<img src="images/persons/Jens.jpg" alt="Jens Ljunggren" />
+					<div class="person-info">
+						<h3>Jens Ljunggren, Marknadsansvarig</h3>
+						<p>
+							Ansvarig för sociala medier samt marknadsföringen av vår produkt.
+							Jens passar bra i denna rollen för att han är bra på att tänka
+							utanför boxen och att sälja in sig själv. Jens går tredje och
+							sista året på ekonomiprogrammet.
+						</p>
+					</div>
+				</div>
+				<div class="person-container">
+					<img src="images/persons/Melisa.jpg" alt="Melisa Österblom" />
+					<div class="person-info">
+						<h3>Melisa Österblom, ekonomiansvarig</h3>
+						<p>
+							Driven, resultatinriktad och organiserad. Hon kommer att ta hand
+							om allt som ingår i företagets ekonomi. Melisa har alltid varit
+							intresserad av ekonomi och därav var ekonomiprogrammet ett
+							självklart val för henne. Ekonomi är något som hon är passionerad
+							över och ser UF som en möjlighet till att utvecklas för en framtid
+							inom ekonomin.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="segment" id="bussiness-idea">
+			<h2>Affärsidé</h2>
+			<p class="citat">
+				Att erbjuda närproducerade och hållbara brickor av snygg design
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+				quod corporis obcaecati officiis neque eius nisi tenetur earum.
+				Quibusdam vitae quisquam inventore libero quos, error excepturi aliquam
+				ut laborum magni? Eius pariatur voluptatibus illum, necessitatibus
+				tempora rerum at repudiandae nemo laborum possimus corporis enim
+				adipisci iusto in tempore reiciendis nulla soluta numquam ab inventore
+				dignissimos consectetur amet. Consequuntur, nulla doloremque.
+			</p>
+		</div>
+		<div class="segment" id="background">
+			<h2>Bakgrund</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat
+				tempora totam deleniti, odit explicabo error sit fuga quos, consequatur
+				debitis non doloremque tenetur nulla illum voluptas molestias mollitia
+				aperiam!
+			</p>
+			<h2>Vision</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dicta
+				reprehenderit exercitationem perferendis, ex, nisi aut voluptatum cum
+				quia nemo eveniet itaque fuga sunt, ea veniam labore voluptatem
+				architecto ullam.
+			</p>
+		</div>
+		<div class="segment" id="sustainability">
+			<h2>Hållbarhet</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+				possimus suscipit voluptas sed earum quia vitae debitis, repellendus
+				magnam beatae soluta. Consequuntur labore exercitationem aperiam
+				excepturi numquam quo cupiditate odit.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+				possimus suscipit voluptas sed earum quia vitae debitis, repellendus
+				magnam beatae soluta. Consequuntur labore exercitationem aperiam
+				excepturi numquam quo cupiditate odit.
+			</p>
+		</div>
+		<footer>
+			<a href="https://www.instagram.com/brickapabricka_uf/" class="social"
+				><i class="fa-brands fa-instagram"></i> @brickapabricka_uf</a
+			>
+			<a
+				href="https://www.facebook.com/profile.php?id=100086192835796"
+				class="social"
+				><i class="fa-brands fa-facebook"></i> Bricka på Bricka UF</a
+			>
+			<a href="https://ungforetagsamhet.se/company/bricka-pa-bricka-uf"
+				>Ungföretagsamhet.se</a
+			>
+			<span class="cc">ⒸBricka på Bricka 2022</span>
+		</footer>
+	</body>
+</html>
