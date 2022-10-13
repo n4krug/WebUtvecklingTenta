@@ -1,7 +1,8 @@
 $(function() {
     var navOpen = false
+
+    // Toggle nav on hamburger button press
     $('#open-nav-btn').on('click', function() {
-        // console.log('nav')
         if (navOpen) {
             navOpen = false
             $('#mobile-nav-page').animate({ left: "-100%"}, 200)
@@ -13,6 +14,7 @@ $(function() {
         }
     })
 
+    // Close navigation page on link press
     $('.navigation-page a').on('click', function() {
         navOpen = false
         $('#mobile-nav-page').animate({ left: "-100%"}, 200)
@@ -38,37 +40,43 @@ $(function() {
         }
     })
 
+    // Automatically add scroll indicators based on amount of images
     $('.slideshow .img-container').children('img').each(() => {
-        $('.indicator-container').append(`<div class="indicator"></div>`)
+        $(this).find('.indicator-container').append(`<div class="indicator"></div>`)
     });
+
+    // Reset slideshow scroll to start
     $('.slideshow .img-container').scrollLeft(0)
     $('.indicator-container .indicator:first-child').addClass('active')
 
+    // Update indacator and description on scroll
     $('.slideshow .img-container').on('scroll', function() {
-        // console.log($('.slideshow .img-container').scrollLeft() / $('.slideshow .img-container').width())
         let slideshow = $(this).parents('.slideshow')
         let scrollElement = Math.round(slideshow.find('.img-container').scrollLeft() / slideshow.find('.img-container').width()) + 1
 
-        // * Set correct indicator bar
+        // Set correct indicator bar
         slideshow.find(`.indicator`).removeClass('active')
         slideshow.find(`.indicator:nth-child(${scrollElement})`).addClass('active')
 
-        // * Show correct description
+        // Show correct description
         slideshow.find(`.img-info`).removeClass('active')
         slideshow.find(`.img-info:nth-child(${scrollElement})`).addClass('active')
     })
 
+    // Go to corresponding image when indicator is pressed
     $('.indicator').on('click', function() {
         let slideshow = $(this).parents('.slideshow')
         slideshow.find('.img-container').scrollLeft($(this).index() * slideshow.find('.img-container').width())
     })
 
+    // Scroll to next image
     $('.slideshow-prev').on('click', function() {
         let slideshow = $(this).parents('.slideshow')
         let imgContainer = slideshow.find('.img-container')
         imgContainer.scrollLeft(imgContainer.scrollLeft() - imgContainer.width())
     })
 
+    // Scroll to previous image
     $('.slideshow-next').on('click', function() {
         let slideshow = $(this).parents('.slideshow')
         let imgContainer = slideshow.find('.img-container')
