@@ -28,18 +28,58 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div class="navigation-bar mobile">
-			<button class="hamburger" id="open-nav-btn">
+		<div class="navigation-bar">
+			<button class="hamburger mobile" id="open-nav-btn">
 				<span class="top"></span>
 				<span class="mid"></span>
 				<span class="bot"></span>
 			</button>
 			<a href="#home">Bricka på Bricka UF</a>
+			<div class="desktop dropdown-btns">
+				<button class="dropdown-btn">
+					Avsnitt
+					<div class="nav-dropdown">
+						<ul class="nav-list segments">
+							<li><a href="#home">Start</a></li>
+							<li><a href="#info">Våra brickor</a></li>
+							<li><a href="#about">Vem är vi?</a></li>
+							<li><a href="#bussiness-idea">Affärsidé</a></li>
+							<li><a href="#background">Bakgrund - Vision</a></li>
+							<li><a href="#sustainability">Hållbarhet</a></li>
+						</ul>
+					</div>
+				</button>
+				<button class="dropdown-btn">
+					Länkar
+					<div class="nav-dropdown">
+						<ul class="nav-list links">
+							<li>
+								<a href="https://www.instagram.com/brickapabricka_uf/"
+									>Instagram</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.facebook.com/profile.php?id=100086192835796"
+									>Facebook</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://ungforetagsamhet.se/company/bricka-pa-bricka-uf"
+									>Ungföretagsamhet</a
+								>
+							</li>
+						</ul>
+					</div>
+				</button>
+			</div>
 		</div>
 		<div class="navigation-page mobile" id="mobile-nav-page">
 			<h3 class="nav-subheading">Avsnitt</h3>
 			<ul class="nav-list segments">
 				<li><a href="#home">Start</a></li>
+				<li><a href="#info">Våra brickor</a></li>
 				<li><a href="#about">Vem är vi?</a></li>
 				<li><a href="#bussiness-idea">Affärsidé</a></li>
 				<li><a href="#background">Bakgrund - Vision</a></li>
@@ -66,8 +106,52 @@
 		<div class="segment" id="home">
 			<img src="images/Logo.png" alt="träd på en bricka" />
 			<h1>Bricka på Bricka UF</h1>
+		</div>
+		<div class="segment" id="info">
 			<h2>Våra Brickor</h2>
-			<div class="slideshow pruducts"></div>
+			<div class="slideshow products">
+				<div class="slideshow-content">
+					<div class="img-container">
+						<img src="images/products/image1.jpg" alt="bricka" srcset="" />
+						<img src="images/products/image2.jpg" alt="bricka" srcset="" />
+						<img src="images/products/image3.jpg" alt="bricka" srcset="" />
+						<img src="images/products/image4.jpg" alt="bricka" srcset="" />
+					</div>
+					<div class="indicator-container"></div>
+					<a class="slideshow-prev desktop">&#10094;</a>
+					<a class="slideshow-next desktop">&#10095;</a>
+				</div>
+				<div class="slideshow-info-container">
+					<div class="img-info active">
+						<h3>Bricka 1</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+							assumenda, provident cupiditate ea sed?
+						</p>
+					</div>
+					<div class="img-info">
+						<h3>Bricka 2</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+							assumenda, provident cupiditate ea sed?
+						</p>
+					</div>
+					<div class="img-info">
+						<h3>Bricka 3</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+							assumenda, provident cupiditate ea sed?
+						</p>
+					</div>
+					<div class="img-info">
+						<h3>Bricka 4</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+							assumenda, provident cupiditate ea sed?
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="segment" id="about">
 			<h2>Vem är vi?</h2>
